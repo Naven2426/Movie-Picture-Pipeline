@@ -74,4 +74,4 @@ jobs:
       - name: Deploy to EKS
         run: |
           cd starter/frontend/k8s
-          kubectl apply -f .
+          kubectl apply -k .
