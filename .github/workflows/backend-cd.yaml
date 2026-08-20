@@ -73,4 +73,5 @@ jobs:
       - name: Deploy to EKS
         run: |
           cd starter/backend/k8s   
+          echo "Applying kustomization..."
           kubectl apply -k .
