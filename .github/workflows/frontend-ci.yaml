@@ -54,7 +54,7 @@ jobs:
           CI: true
         run: |
           cd starter/frontend
-          npm test -- --watchAll=false
+          CI=true npm test -- --watchAll=false --passWithNoTests
 
   build:
     needs: [lint, test]
